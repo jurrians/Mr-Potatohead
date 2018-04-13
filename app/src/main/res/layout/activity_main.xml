@@ -7,21 +7,95 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout
+        android:layout_width="248dp"
+        android:layout_height="268dp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="16dp">
 
-    <Button
-        android:id="@+id/myButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Knop"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="148dp" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@body"
+            app:srcCompat="@drawable/body" />
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@arms"
+            app:srcCompat="@drawable/arms" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@ears"
+            app:srcCompat="@drawable/ears" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@eyebrows"
+            app:srcCompat="@drawable/eyebrows" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@eyes"
+            app:srcCompat="@drawable/eyes" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@glasses"
+            app:srcCompat="@drawable/glasses" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@hat"
+            app:srcCompat="@drawable/hat" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@mouth"
+            app:srcCompat="@drawable/mouth" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@mustache"
+            app:srcCompat="@drawable/mustache" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@nose"
+            app:srcCompat="@drawable/nose" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@shoes"
+            app:srcCompat="@drawable/shoes" />
+    </FrameLayout>
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="248dp"
+        android:layout_height="189dp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="306dp">
+
+    </android.support.v7.widget.GridLayout>
 </android.support.constraint.ConstraintLayout>
