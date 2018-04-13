@@ -10,6 +10,8 @@ import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,41 +23,52 @@ public class MainActivity extends AppCompatActivity {
         String msg = "checkClicked: ";
         Log.d(tag, msg);
 
-
-    }
-
-    CheckBox checkbox = (CheckBox) v;
-
-    String string = checkbox.getText().toString();
-
-    ImageView arms = (ImageView) findViewById(R.id.arms);
-    ImageView ears = (ImageView) findViewById(R.id.ears);
-    ImageView eyebrows = (ImageView) findViewById(R.id.eyebrows);
-    ImageView eyes = (ImageView) findViewById(R.id.eyes);
-    ImageView glasses = (ImageView) findViewById(R.id.glasses);
-    ImageView hat =(ImageView) findViewById(R.id.hat);
-    ImageView mouth =(ImageView) findViewById(R.id.mouth);
-    ImageView mustache = (ImageView) findViewById(R.id.mustache);
-    ImageView nose = (ImageView) findViewById(R.id.nose);
-    ImageView shoes = (ImageView) findViewById(R.id.shoes);
-
-    public void OnClick(View v) {
+        CheckBox checkbox = (CheckBox) v;
+        String string = checkbox.getText().toString();
 
 
-        if (checkbox.isChecked() && string == "arms" ){
+        CheckBox checkArms = findViewById(R.id.checkArms);
+        CheckBox checkEars = findViewById(R.id.checkEars);
+        CheckBox checkEyebrows = findViewById(R.id.checkEyebrows);
+        CheckBox checkEyes = findViewById(R.id.checkEyes);
+        CheckBox checkGlasses = findViewById(R.id.checkGlasses);
+        CheckBox checkHat = findViewById(R.id.checkHat);
+        CheckBox checkMouth = findViewById(R.id.checkMouth);
+        CheckBox checkMustache = findViewById(R.id.checkMustache);
+        CheckBox checkNose = findViewById(R.id.checkNose);
+        CheckBox checkShoes = findViewById(R.id.checkShoes);
+
+        ImageView arms = (ImageView) findViewById(R.id.arms);
+        ImageView ears = (ImageView) findViewById(R.id.ears);
+        ImageView eyebrows = (ImageView) findViewById(R.id.eyebrows);
+        ImageView eyes = (ImageView) findViewById(R.id.eyes);
+        ImageView glasses = (ImageView) findViewById(R.id.glasses);
+        ImageView hat =(ImageView) findViewById(R.id.hat);
+        ImageView mouth =(ImageView) findViewById(R.id.mouth);
+        ImageView mustache = (ImageView) findViewById(R.id.mustache);
+        ImageView nose = (ImageView) findViewById(R.id.nose);
+        ImageView shoes = (ImageView) findViewById(R.id.shoes);
+
+
+
+
+
+
+
+        if (checkArms.isChecked()){
             arms.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() && string == "arms") {
+        else if (!checkArms.isChecked()) {
             arms.setVisibility(View.INVISIBLE);
         }
 
 
-        if (checkbox.isChecked() && string == "ears" ){
+        if (checkEars.isChecked()){
             ears.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() && string == "ears") {
+        else if (!checkEars.isChecked()) {
             ears.setVisibility(View.INVISIBLE);
         }
 
@@ -63,74 +76,74 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        if (checkbox.isChecked() && string == "eyebrows" ){
+        if (checkEyebrows.isChecked()){
             eyebrows.setVisibility(View.VISIBLE);
 
         }
 
-        else if (!checkbox.isChecked() && string == "eyebrows") {
+        else if (!checkEyebrows.isChecked()) {
             eyebrows.setVisibility(View.INVISIBLE);
         }
 
 
 
 
-        if (checkbox.isChecked() && string == "eyes" ){
+        if (checkEyes.isChecked()){
             eyes.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() && string == "eyes") {
+        else if (!checkEyes.isChecked()) {
             eyes.setVisibility(View.INVISIBLE);
         }
 
 
 
-        if (checkbox.isChecked() && string == "glasses" ){
+        if (checkGlasses.isChecked()){
             glasses.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() && string == "glasses") {
+        else if (!checkGlasses.isChecked()) {
             glasses.setVisibility(View.INVISIBLE);
         }
 
-        if (checkbox.isChecked() && string == "hat" ){
+        if (checkHat.isChecked()){
             hat.setVisibility(View.VISIBLE);
         }
 
 
-        else if (!checkbox.isChecked() && string == "hat") {
+        else if (!checkHat.isChecked()) {
             hat.setVisibility(View.INVISIBLE);
         }
 
-        if (checkbox.isChecked() && string == "mouth" ){
+        if (checkMouth.isChecked() ){
             mouth.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() && string == "mouth") {
+        else if (!checkMouth.isChecked() ) {
             mouth.setVisibility(View.INVISIBLE);
         }
 
-        if (checkbox.isChecked() && string == "mustache" ){
+        if (checkMustache.isChecked() ){
             mustache.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() && string == "mustache") {
+        else if (!checkMustache.isChecked() ) {
             mustache.setVisibility(View.INVISIBLE);
         }
 
-        if (checkbox.isChecked() && string == "nose" ){
+        if (checkNose.isChecked() ){
             nose.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() && string == "nose") {
+        else if (!checkNose.isChecked() ) {
             nose.setVisibility(View.INVISIBLE);
         }
 
-        if (checkbox.isChecked() && string == "shoes" ){
+        if (checkShoes.isChecked() ){
             shoes.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() && string == "shoes") {
+        else if (!checkShoes.isChecked() ) {
             shoes.setVisibility(View.INVISIBLE);
         }
 
@@ -140,19 +153,4 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
