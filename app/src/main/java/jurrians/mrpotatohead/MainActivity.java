@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             arms.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() == && string == "arms") {
+        else if (!checkbox.isChecked() && string == "arms") {
             arms.setVisibility(View.INVISIBLE);
         }
 
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
             ears.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() == && string == "ears") {
+        else if (!checkbox.isChecked() && string == "ears") {
             ears.setVisibility(View.INVISIBLE);
         }
 
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        else if (!checkbox.isChecked() == && string == "eyebrows") {
+        else if (!checkbox.isChecked() && string == "eyebrows") {
             eyebrows.setVisibility(View.INVISIBLE);
         }
 
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             eyes.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() == && string == "eyes") {
+        else if (!checkbox.isChecked() && string == "eyes") {
             eyes.setVisibility(View.INVISIBLE);
         }
 
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             glasses.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() == && string == "glasses") {
+        else if (!checkbox.isChecked() && string == "glasses") {
             glasses.setVisibility(View.INVISIBLE);
         }
 
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        else if (!checkbox.isChecked() == && string == "hat") {
+        else if (!checkbox.isChecked() && string == "hat") {
             hat.setVisibility(View.INVISIBLE);
         }
 
@@ -106,23 +106,23 @@ public class MainActivity extends AppCompatActivity {
             mustache.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() == && string == "mustache") {
+        else if (!checkbox.isChecked() && string == "mustache") {
             mustache.setVisibility(View.INVISIBLE);
         }
 
         if (checkbox.isChecked() && string == "nose" ){
-            mustache.setVisibility(View.VISIBLE);
+            nose.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() == && string == "nose") {
-            mustache.setVisibility(View.INVISIBLE);
+        else if (!checkbox.isChecked() && string == "nose") {
+            nose.setVisibility(View.INVISIBLE);
         }
 
         if (checkbox.isChecked() && string == "shoes" ){
             shoes.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() == && string == "shoes") {
+        else if (!checkbox.isChecked() && string == "shoes") {
             shoes.setVisibility(View.INVISIBLE);
         }
 
