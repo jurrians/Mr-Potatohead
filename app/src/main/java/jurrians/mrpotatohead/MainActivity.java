@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +26,6 @@ public class MainActivity extends AppCompatActivity {
         Log.d(tag, msg);
 
         CheckBox checkbox = (CheckBox) v;
-        String string = checkbox.getText().toString();
-
 
         CheckBox checkArms = findViewById(R.id.checkArms);
         CheckBox checkEars = findViewById(R.id.checkEars);
@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
             arms.setVisibility(View.INVISIBLE);
         }
 
-
         if (checkEars.isChecked()){
             ears.setVisibility(View.VISIBLE);
         }
@@ -72,20 +71,13 @@ public class MainActivity extends AppCompatActivity {
             ears.setVisibility(View.INVISIBLE);
         }
 
-
-
-
-
         if (checkEyebrows.isChecked()){
             eyebrows.setVisibility(View.VISIBLE);
-
         }
 
         else if (!checkEyebrows.isChecked()) {
             eyebrows.setVisibility(View.INVISIBLE);
         }
-
-
 
 
         if (checkEyes.isChecked()){
@@ -97,7 +89,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-
         if (checkGlasses.isChecked()){
             glasses.setVisibility(View.VISIBLE);
         }
@@ -106,14 +97,15 @@ public class MainActivity extends AppCompatActivity {
             glasses.setVisibility(View.INVISIBLE);
         }
 
+
         if (checkHat.isChecked()){
             hat.setVisibility(View.VISIBLE);
         }
 
-
         else if (!checkHat.isChecked()) {
             hat.setVisibility(View.INVISIBLE);
         }
+
 
         if (checkMouth.isChecked() ){
             mouth.setVisibility(View.VISIBLE);
@@ -123,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
             mouth.setVisibility(View.INVISIBLE);
         }
 
+
         if (checkMustache.isChecked() ){
             mustache.setVisibility(View.VISIBLE);
         }
@@ -131,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
             mustache.setVisibility(View.INVISIBLE);
         }
 
+
         if (checkNose.isChecked() ){
             nose.setVisibility(View.VISIBLE);
         }
@@ -138,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
         else if (!checkNose.isChecked() ) {
             nose.setVisibility(View.INVISIBLE);
         }
+
 
         if (checkShoes.isChecked() ){
             shoes.setVisibility(View.VISIBLE);
