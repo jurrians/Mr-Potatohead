@@ -21,20 +21,26 @@ public class MainActivity extends AppCompatActivity {
         String msg = "checkClicked: ";
         Log.d(tag, msg);
 
-        CheckBox checkbox = (CheckBox) v;
 
-        String string = checkbox.getText().toString();
+    }
 
-        ImageView arms = (ImageView) findViewById(R.id.arms);
-        ImageView ears = (ImageView) findViewById(R.id.ears);
-        ImageView eyebrows = (ImageView) findViewById(R.id.eyebrows);
-        ImageView eyes = (ImageView) findViewById(R.id.eyes);
-        ImageView glasses = (ImageView) findViewById(R.id.glasses);
-        ImageView hat =(ImageView) findViewById(R.id.hat);
-        ImageView mouth =(ImageView) findViewById(R.id.mouth);
-        ImageView mustache = (ImageView) findViewById(R.id.mustache);
-        ImageView nose = (ImageView) findViewById(R.id.nose);
-        ImageView shoes = (ImageView) findViewById(R.id.shoes);
+    CheckBox checkbox = (CheckBox) v;
+
+    String string = checkbox.getText().toString();
+
+    ImageView arms = (ImageView) findViewById(R.id.arms);
+    ImageView ears = (ImageView) findViewById(R.id.ears);
+    ImageView eyebrows = (ImageView) findViewById(R.id.eyebrows);
+    ImageView eyes = (ImageView) findViewById(R.id.eyes);
+    ImageView glasses = (ImageView) findViewById(R.id.glasses);
+    ImageView hat =(ImageView) findViewById(R.id.hat);
+    ImageView mouth =(ImageView) findViewById(R.id.mouth);
+    ImageView mustache = (ImageView) findViewById(R.id.mustache);
+    ImageView nose = (ImageView) findViewById(R.id.nose);
+    ImageView shoes = (ImageView) findViewById(R.id.shoes);
+
+    public void OnClick(View v) {
+
 
         if (checkbox.isChecked() && string == "arms" ){
             arms.setVisibility(View.VISIBLE);
@@ -52,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         else if (!checkbox.isChecked() && string == "ears") {
             ears.setVisibility(View.INVISIBLE);
         }
+
+
 
 
 
@@ -98,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             mouth.setVisibility(View.VISIBLE);
         }
 
-        else if (!checkbox.isChecked() == && string == "mouth") {
+        else if (!checkbox.isChecked() && string == "mouth") {
             mouth.setVisibility(View.INVISIBLE);
         }
 
@@ -127,6 +135,17 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
+
+
+
+
+
+}
+
+
+
+
 
 
 
