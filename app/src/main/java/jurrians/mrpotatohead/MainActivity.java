@@ -10,9 +10,6 @@ import android.widget.CheckBox;
 import android.widget.ImageView;
 
 
-
-
-
 public class MainActivity extends AppCompatActivity {
 
 
@@ -43,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_main);
 
 
         checkArms = (CheckBox) findViewById(R.id.checkArms);
@@ -70,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         shoes = (ImageView) findViewById(R.id.shoes);
 
 
-        setContentView(R.layout.activity_main);
+
 
     }
 
@@ -109,6 +106,9 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt("shoes", shoesValue);
     }
 
+
+
+
     public void onRestoreInstanceState (Bundle inState) {
         super.onRestoreInstanceState(inState);
 
@@ -146,29 +146,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void checkClicked(View v) {
-
-        CheckBox checkArms = (CheckBox) findViewById(R.id.checkArms);
-        CheckBox checkEars = (CheckBox) findViewById(R.id.checkEars);
-        CheckBox checkEyebrows = (CheckBox) findViewById(R.id.checkEyebrows);
-        CheckBox checkEyes = (CheckBox) findViewById(R.id.checkEyes);
-        CheckBox checkGlasses = (CheckBox) findViewById(R.id.checkGlasses);
-        CheckBox checkHat = (CheckBox) findViewById(R.id.checkHat);
-        CheckBox checkMouth = (CheckBox) findViewById(R.id.checkMouth);
-        CheckBox checkMustache = (CheckBox) findViewById(R.id.checkMustache);
-        CheckBox checkNose = (CheckBox) findViewById(R.id.checkNose);
-        CheckBox checkShoes = (CheckBox) findViewById(R.id.checkShoes);
-
-
-        ImageView arms = (ImageView) findViewById(R.id.arms);
-        ImageView ears = (ImageView) findViewById(R.id.ears);
-        ImageView eyebrows = (ImageView) findViewById(R.id.eyebrows);
-        ImageView eyes = (ImageView) findViewById(R.id.eyes);
-        ImageView glasses = (ImageView) findViewById(R.id.glasses);
-        ImageView hat = (ImageView) findViewById(R.id.hat);
-        ImageView mouth = (ImageView) findViewById(R.id.mouth);
-        ImageView mustache = (ImageView) findViewById(R.id.mustache);
-        ImageView nose = (ImageView) findViewById(R.id.nose);
-        ImageView shoes = (ImageView) findViewById(R.id.shoes);
 
         CheckBox checkbox = (CheckBox) v;
 
